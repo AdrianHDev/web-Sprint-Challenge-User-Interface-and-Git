@@ -98,6 +98,7 @@ p {
 
 .top-content img {
     margin: 0 0 3% 0;
+    width: 100%;
 }
 
 .container {
@@ -117,6 +118,10 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+
+.top-content .text-container.about {
+    width: 100%;
 }
 
 .middle-content {
@@ -143,6 +148,28 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-about {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.mission-info{
+    flex: 1 1 47%;
+    padding: 4% 1%;
+    border-bottom: 1px dashed black;
+}
+
+.mission-info a {
+    border: 3px black solid;
+    margin: 5% 0 0 0;
+    padding: 2% 5%;
+    display: block;
+    width: fit-content;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
 }
 
 .bottom-content {
@@ -177,6 +204,12 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.bottom-content .text-content {
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+    margin-left: 0
 }
 
 
