@@ -49,6 +49,8 @@ table {
 
 * {
     box-sizing: border-box;
+    width: 100%;
+    border: black 1px solid !important;
 }
 
 html, body {
@@ -64,6 +66,18 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
+}
+
+/* header styling */
+
+.header {
+    display:flex;
+    flex-direction: row;
+    padding: 2% 0;
+}
+
+.lambdaSchool {
+    width:30%;
 }
 
 .container {
@@ -115,6 +129,7 @@ p {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    width: auto;
 }
 
 .bottom-content .text-container {
