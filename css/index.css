@@ -47,8 +47,11 @@ table {
 	border-spacing: 0;
 }
 
+/* General styles */
+
 * {
     box-sizing: border-box;
+    width: 100%;
 }
 
 html, body {
@@ -64,6 +67,39 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
+}
+
+/* header styling */
+
+.header {
+    display:flex;
+    flex-direction: row;
+    padding: 2% 0;
+}
+
+.navbar {
+    display:flex;
+}
+
+.navbar a {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 5%;
+}
+
+.lambdaSchool {
+    width:30%;
+}
+
+/* top-content style */
+
+.top-content img {
+    margin: 0 0 3% 0;
+    width: 100%;
 }
 
 .container {
@@ -85,6 +121,13 @@ p {
     padding-bottom: 20px;  
 }
 
+.top-content .text-container.about {
+    width: 100%;
+}
+
+
+/* mid content style */
+
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -101,10 +144,9 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes div {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -112,10 +154,67 @@ p {
     justify-content: center;
 }
 
+/* Box colors */
+
+.box1    {
+    background:teal;
+}
+.box2    {
+    background:gold;
+}
+.box3    {
+    background:cadetblue;
+}
+.box4    {
+    background:coral;
+}
+.box5    {
+    background:crimson;
+}
+.box6    {
+    background:forestgreen;
+}
+.box7    {
+    background:darkorchid;
+}
+.box8    {
+    background:hotpink;
+}
+.box9    {
+    background:indigo;
+}
+.box10   {
+    background:dodgerblue;
+}
+
+.middle-about {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.mission-info{
+    flex: 1 1 47%;
+    padding: 4% 1%;
+    border-bottom: 1px dashed black;
+}
+
+.mission-info a {
+    border: 3px black solid;
+    margin: 5% 0 0 0;
+    padding: 2% 5%;
+    display: block;
+    width: fit-content;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+/* bottom content style */
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    width: auto;
 }
 
 .bottom-content .text-container {
@@ -125,7 +224,7 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
-
+/* footer style */
 footer {
     width: 100%;
     background: black;
@@ -143,4 +242,10 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.bottom-content .text-content {
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+    margin-left: 0
 }
